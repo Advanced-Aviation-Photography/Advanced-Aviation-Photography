@@ -36,7 +36,7 @@
     //#define BI
     //#define TRI
     //#define QUADP
-    //#define QUADX
+    #define QUADX
     //#define Y4
     //#define Y6
     //#define HEX6
@@ -159,7 +159,7 @@
     /***************************    independent sensors    ********************************/
       /* leave it commented if you already checked a specific board above */
       /* I2C gyroscope */
-      //#define WMP
+      #define WMP
       //#define ITG3200
       //#define MPU3050
       //#define L3G4200D
@@ -167,7 +167,7 @@
       //#define LSM330        //combo + ACC
       
       /* I2C accelerometer */
-      //#define NUNCHUCK  // if you want to use the nunckuk connected to a WMP
+      #define NUNCHUCK  // if you want to use the nunckuk connected to a WMP
       //#define MMA7455
       //#define ADXL345
       //#define BMA020
