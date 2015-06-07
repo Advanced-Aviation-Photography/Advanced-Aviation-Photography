@@ -77,7 +77,7 @@
 
   /***************************    Internal i2c Pullups   ********************************/
     /* enable internal I2C pull ups (in most cases it is better to use external pullups) */
-    //#define INTERNAL_I2C_PULLUPS
+    #define INTERNAL_I2C_PULLUPS
 
   /**************************************************************************************/
   /*****************          boards and sensor definitions            ******************/
@@ -179,7 +179,7 @@
       //#define MMA8451Q
 
       /* I2C barometer */
-      //#define BMP085
+      #define BMP085
       //#define MS561101BA
 
       /* I2C magnetometer */
