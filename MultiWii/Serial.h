@@ -8,7 +8,11 @@
 #else
   #define UART_NUMBER 1
 #endif
-#define RX_BUFFER_SIZE 256 // 256 RX buffer is needed for GPS communication (64 or 128 was too short)
+#if defined(GPS_SERIAL)
+  #define RX_BUFFER_SIZE 256 // 256 RX buffer is needed for GPS communication (64 or 128 was too short)
+#else
+  #define RX_BUFFER_SIZE 64
+#endif
 #define TX_BUFFER_SIZE 128
 
 void    SerialOpen(uint8_t port, uint32_t baud);
@@ -21,7 +25,5 @@ bool    SerialTXfree(uint8_t port);
 uint8_t SerialUsedTXBuff(uint8_t port);
 void    SerialSerialize(uint8_t port,uint8_t a);
 void    UartSendData(uint8_t port);
-
-void SerialWrite16(uint8_t port, int16_t val);
 
 #endif /* SERIAL_H_ */
