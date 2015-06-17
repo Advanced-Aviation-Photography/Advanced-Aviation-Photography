@@ -88,7 +88,7 @@
          please submit any correction to this list.
            Note from Alex: I only own some boards, for other boards, I'm not sure, the info was gathered via rc forums, be cautious */
       //#define FFIMUv1         // first 9DOF+baro board from Jussi, with HMC5843                   <- confirmed by Alex
-      //#define FFIMUv2         // second version of 9DOF+baro board from Jussi, with HMC5883       <- confirmed by Alex
+      #define FFIMUv2         // second version of 9DOF+baro board from Jussi, with HMC5883       <- confirmed by Alex
       //#define FREEIMUv1       // v0.1 & v0.2 & v0.3 version of 9DOF board from Fabio
       //#define FREEIMUv03      // FreeIMU v0.3 and v0.3.1
       //#define FREEIMUv035     // FreeIMU v0.3.5 no baro
@@ -159,7 +159,7 @@
     /***************************    independent sensors    ********************************/
       /* leave it commented if you already checked a specific board above */
       /* I2C gyroscope */
-      #define WMP
+      //#define WMP
       //#define ITG3200
       //#define MPU3050
       //#define L3G4200D
@@ -167,7 +167,7 @@
       //#define LSM330        //combo + ACC
       
       /* I2C accelerometer */
-      #define NUNCHUCK  // if you want to use the nunckuk connected to a WMP
+      //#define NUNCHUCK  // if you want to use the nunckuk connected to a WMP
       //#define MMA7455
       //#define ADXL345
       //#define BMA020
@@ -179,7 +179,7 @@
       //#define MMA8451Q
 
       /* I2C barometer */
-      #define BMP085
+      //#define BMP085
       //#define MS561101BA
 
       /* I2C magnetometer */
